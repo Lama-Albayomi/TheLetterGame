@@ -21,6 +21,11 @@ public class GameManager : MonoBehaviour
         
     }
     void Update(){
+
+        if (Input.GetKeyDown(KeyCode.Return)){
+            SwitchGameState();
+        }
+
         if(isEnded) return;
         // Get input from the user
         string input = Input.inputString;
@@ -68,9 +73,7 @@ public class GameManager : MonoBehaviour
             LetterEntered(taa);
         }
         
-        if (Input.GetKeyDown(KeyCode.Return)){
-            GameEnded();
-        }
+        
         
     }
     public void LetterEntered(GameObject letter){
@@ -81,16 +84,31 @@ public class GameManager : MonoBehaviour
         letters.Add(inst);
         
     }
+    public void SwitchGameState(){
+        if (isEnded){
+            GameReset();
+        }
+        else{
+            GameEnded();
+        }
+    
+    }
+    public void GameReset(){
+        foreach(Letter letter in letters){
+            Destroy(letter.gameObject);
+        }
+        letters.Clear();
+        isEnded = false;
+    }
+
     public void GameEnded(){
         foreach(Letter letter in letters){
             letter.Fall();
         }
 
         Debug.Log("Game Ended");
-        letters.Clear();
         numberofLetters = 0;
 
         isEnded = true;
-    
     }
 }
