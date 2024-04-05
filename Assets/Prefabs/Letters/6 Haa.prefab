@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8132112057276326816}
   - component: {fileID: 9036565237409041411}
   m_Layer: 0
-  m_Name: Haa
+  m_Name: 6 Haa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccdce4e47c4c6a44791c30e1ec370b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 1
+  size: 2
   children: []
 --- !u!60 &9036565237409041411
 PolygonCollider2D:

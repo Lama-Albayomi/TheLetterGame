@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 749467091420140227}
   - component: {fileID: 4784137488178247582}
   m_Layer: 0
-  m_Name: Alf
+  m_Name: 1 Alf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,5 +178,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccdce4e47c4c6a44791c30e1ec370b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 0
+  size: 1
   children: []

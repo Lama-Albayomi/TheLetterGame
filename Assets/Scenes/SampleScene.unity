@@ -152,7 +152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc88b03aab00c4bf39dc33f85c3c6a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LetterSpace: 1.76
   alf: {fileID: 2348885172202958914, guid: 4fcf151ea4ff41d4aa2a0826c36ff586, type: 3}
+  alfHamza: {fileID: 0}
   baa: {fileID: 3133518876520623782, guid: 23a9bc2d71c1260478dbcff885ea0779, type: 3}
   taa: {fileID: 1688126317459563463, guid: c4bb0f13ecc9c8e4bb2432f5f4d4e717, type: 3}
   thaa: {fileID: 7785113252929285599, guid: d4b31a016771d7949a01b111c9af201b, type: 3}
@@ -161,6 +163,9 @@ MonoBehaviour:
   Kaa: {fileID: 85853567540934418, guid: c59931caa47c8cd4d81fd5bf39d4e900, type: 3}
   dal: {fileID: 6137138173989367345, guid: 909228da242b54449b5e3487006778c4, type: 3}
   zal: {fileID: 5208482295578690971, guid: e266a9f91dce6814f8f125ae55914ae9, type: 3}
+  raa: {fileID: 8171850052915435615, guid: 7cd97e8f0daa13844978239231dc2e3d, type: 3}
+  zeen: {fileID: 6126963331554719625, guid: 3e45843e37bfcfa41b1fe2224e0ab8ba, type: 3}
+  seen: {fileID: 9159475914161898551, guid: 390a9cd604381494285e43611274c8d1, type: 3}
   startPos: {fileID: 1801563121}
 --- !u!4 &194843242
 Transform:
