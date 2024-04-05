@@ -66,11 +66,15 @@ public class GameManager : MonoBehaviour
         }else if (input == "س"){
             LetterEntered(seen);
         }
+        // space
+        else if (input == " "){
+            AddSpace();
+        }
         
         
         
     }
-    public void LetterEntered(GameObject letter){
+    private void LetterEntered(GameObject letter){
         int size = letter.GetComponent<Letter>().size;
         if (numberofSpaces + size > levelManager.LetterSpaceLimit){
             Debug.Log("cant Enter");
@@ -83,7 +87,16 @@ public class GameManager : MonoBehaviour
             letters.Add(inst);
         }
     }
-    public void SwitchGameState(){
+    private void AddSpace(){
+        if (numberofSpaces + 1 > levelManager.LetterSpaceLimit){
+            Debug.Log("cant Enter");
+            return;
+        }
+        else{
+            numberofSpaces += 1;
+        }
+    }
+    private void SwitchGameState(){
         if (isEnded){
             GameReset();
         }
@@ -92,14 +105,14 @@ public class GameManager : MonoBehaviour
         }
     
     }
-    public void GameReset(){
+    private void GameReset(){
         foreach(Letter letter in letters){
             Destroy(letter.gameObject);
         }
         letters.Clear();
         isEnded = false;
     }
-    public void GameEnded(){
+    private void GameEnded(){
         foreach(Letter letter in letters){
             letter.Fall();
         }
