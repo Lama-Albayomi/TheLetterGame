@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     [Range (0, 10)]
     [SerializeField] private float LetterSpace;
+    [SerializeField] private LevelManager levelManager;
     [SerializeField] private GameObject alf;
     [SerializeField] private GameObject alfHamza;
     [SerializeField] private GameObject baa;
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject zeen;
     [SerializeField] private GameObject seen;
     [SerializeField] private Transform startPos;
-    private int numberofSpaces = 0;
+    [SerializeField] private int numberofSpaces = 0;
     private bool isEnded= false;
     private List<Letter> letters = new List<Letter>();
     void Start(){
@@ -71,11 +72,16 @@ public class GameManager : MonoBehaviour
     }
     public void LetterEntered(GameObject letter){
         int size = letter.GetComponent<Letter>().size;
-        numberofSpaces += size;
-        Vector3 letterPosition = startPos.position + new Vector3(numberofSpaces * LetterSpace, 0, 0);
-        Letter inst =  Instantiate(letter, letterPosition, Quaternion.identity).GetComponent<Letter>();
-        letters.Add(inst);
-        
+        if (numberofSpaces + size > levelManager.LetterSpaceLimit){
+            Debug.Log("cant Enter");
+            return;
+        }
+        else{
+            numberofSpaces += size;
+            Vector3 letterPosition = startPos.position + new Vector3(numberofSpaces * LetterSpace, 0, 0);
+            Letter inst =  Instantiate(letter, letterPosition, Quaternion.identity).GetComponent<Letter>();
+            letters.Add(inst);
+        }
     }
     public void SwitchGameState(){
         if (isEnded){

@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 194843242}
   - component: {fileID: 194843241}
+  - component: {fileID: 194843243}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -153,6 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LetterSpace: 1.76
+  levelManager: {fileID: 194843243}
   alf: {fileID: 2348885172202958914, guid: 4fcf151ea4ff41d4aa2a0826c36ff586, type: 3}
   alfHamza: {fileID: 0}
   baa: {fileID: 3133518876520623782, guid: 23a9bc2d71c1260478dbcff885ea0779, type: 3}
@@ -167,6 +169,7 @@ MonoBehaviour:
   zeen: {fileID: 6126963331554719625, guid: 3e45843e37bfcfa41b1fe2224e0ab8ba, type: 3}
   seen: {fileID: 9159475914161898551, guid: 390a9cd604381494285e43611274c8d1, type: 3}
   startPos: {fileID: 1801563121}
+  numberofSpaces: 0
 --- !u!4 &194843242
 Transform:
   m_ObjectHideFlags: 0
@@ -182,6 +185,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &194843243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194843240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d2ba2c21ada30429f88eb54b8d9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LetterSpaceLimit: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
