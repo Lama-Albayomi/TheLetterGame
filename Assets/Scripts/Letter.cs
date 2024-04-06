@@ -6,6 +6,12 @@ public class Letter : MonoBehaviour{
     public int size;
     public GameObject[] children;
     void Awake(){
+        children = new GameObject[transform.childCount];
+        for(int i=0 ;i<transform.childCount;i++){
+            children[i] = transform.GetChild(i).gameObject;
+        }
+    }
+    void Start(){
         DontFall();
     }
     void Update(){

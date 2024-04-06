@@ -7,8 +7,8 @@ public class GameManager : MonoBehaviour
     [Range (0, 10)]
     [SerializeField] private float LetterSpace;
     [SerializeField] private LevelManager levelManager;
-    [SerializeField] private GameObject alf;
     [SerializeField] private GameObject alfHamza;
+    [SerializeField] private GameObject alf;
     [SerializeField] private GameObject baa;
     [SerializeField] private GameObject taa;
     [SerializeField] private GameObject thaa;

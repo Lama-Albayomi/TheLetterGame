@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4065ec53d085d994a937ba80c47576b1
+guid: c5fe994764897ec468be246bb578ecbd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0642_0"
+      name: Asset 32@4x_0
       rect:
         serializedVersion: 2
-        x: 168
-        y: 367
-        width: 69
-        height: 69
+        x: 109
+        y: 325
+        width: 72
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,41 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e659b3fc99625fc4ca9d7f6154739758
-      internalID: 319983846
+      spriteID: 8387741ff71230047a384d6d00cb85d2
+      internalID: 1323983020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0642_1"
-      rect:
-        serializedVersion: 2
-        x: 253
-        y: 367
-        width: 69
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e073473fa98aad4ba21edafd10ea092
-      internalID: 879474010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u0642_2"
+      name: Asset 32@4x_1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 353
-        height: 328
+        width: 315
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d058f83ab1d567d44b7546df35152d08
-      internalID: -294155403
+      spriteID: 481f63cde59735240bcc5f018869d9c7
+      internalID: 379276194
       vertices: []
       indices: 
       edges: []
@@ -183,9 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u0642_0": 319983846
-      "\u0642_1": 879474010
-      "\u0642_2": -294155403
+      Asset 32@4x_0: 1323983020
+      Asset 32@4x_1: 379276194
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
