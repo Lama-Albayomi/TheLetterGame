@@ -276,6 +276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 29 Yaa Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5308165010340759066, guid: b0113b5ccd6cd7c4da3b5fb0afbad2bd, type: 3}
+      propertyPath: size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9035731983943121729, guid: b0113b5ccd6cd7c4da3b5fb0afbad2bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

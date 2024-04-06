@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LetterSpacer : MonoBehaviour
+public class EndPoint : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,5 +14,9 @@ public class LetterSpacer : MonoBehaviour
     void Update()
     {
         
+    }
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        GameManager.instance.TouchTargetPoint();
     }
 }
